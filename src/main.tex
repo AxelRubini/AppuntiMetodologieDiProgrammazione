@@ -2757,6 +2757,20 @@ public class Main {
     }
 }
 \end{lstlisting}
+\section {Possibili Domande}
+\subsection{Autoboxing e Unboxing}
+    In Java, l'autoboxing é il processo di conversione automatica di un tipo primitivo in un oggetto wrapper corrispondente, mentre l'unboxing é il processo inverso,
+    queste due operazioni sono gestite a tempo di compilazione dal compilatore.
+    Queste operazioni sono deduzioni che il compilatore fa in automatico, per esempio:
+    \begin{lstlisting}[language=Java]
+        Integer i = 42; // Autoboxing
+        int j = i; // Unboxing
+    \end{lstlisting}
+    in questo caso il compilatore si occupa di convertire l'intero 42 in un oggetto Integer e viceversa, questo avviene anche quando per esempio si passa un intero a un metodo che accetta un oggetto Integer.
+    \textbf{Nota}: l'autoboxing e l'unboxing possono causare problemi di performance, perché possono creare oggetti inutili, per esempio
+    \text{Nota}: Le Wrapper class possono essere null, mentre i tipi primitivi no.
+
+
 
 
 
