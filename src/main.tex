@@ -2769,6 +2769,42 @@ public class Main {
     in questo caso il compilatore si occupa di convertire l'intero 42 in un oggetto Integer e viceversa, questo avviene anche quando per esempio si passa un intero a un metodo che accetta un oggetto Integer.
     \textbf{Nota}: l'autoboxing e l'unboxing possono causare problemi di performance, perché possono creare oggetti inutili, per esempio
     \text{Nota}: Le Wrapper class possono essere null, mentre i tipi primitivi no.
+\subsection{Quali sono i 4 principi della programmazzione orientata agli oggetti ?}
+    I 4 principi della programmazione orientata agli oggetti sono:
+    \begin{itemize}
+        \item \textbf{Incapsulamento}: é il principio che permette di nascondere i dettagli di implementazione di un oggetto e di esporre solo i metodi pubblici.
+        \item \textbf{Ereditarietà}: é il principio che permette di creare nuove classi a partire da classi esistenti, in questo modo si possono riutilizzare i metodi e le variabili di una classe esistente.
+        \item \textbf{Polimorfismo}: é il principio che permette di utilizzare un oggetto di una classe figlia come se fosse un oggetto della classe padre.
+        \item \textbf{Astrazione}: é il principio che permette di definire un oggetto in maniera generica, in questo modo si possono definire le caratteristiche comuni a più oggetti.
+        \end{itemize}
+\subsection{Stream}
+    Gli stream sono stati introdotti in Java 8 estendono il concetto di programmazzione funzionale in java, gli stream permettono di manipolare una sequenza di elementi in maniera dichiarativa,fanno parte del package java.util.stream.
+    Gli stream sono composti da tre parti:
+    \begin{itemize}
+        \item \textbf{Sorgente}: é la fonte degli elementi, può essere una collezione, un array, un generatore, ecc.
+        \item \textbf{Operazioni intermedie}: sono le operazioni che trasformano o filtrano gli elementi, ad esempio map, filter, ecc.
+        \item \textbf{Operazioni terminali}: sono le operazioni che terminano lo stream, ad esempio forEach, collect, ecc.
+        \end{itemize}
+    \begin{lstlisting}[language=Java]
+        List<String> list = Arrays.asList("a", "b", "c");
+        list.stream()
+        // Operazione intermedia
+            .map(String::toUpperCase)
+            // Operazione terminale
+            .forEach(System.out::println);
+    \end{lstlisting}
+    esistono due tipi di operazioni terminali:
+    \begin{itemize}
+        \item \textbf{Operazioni di riduzione}: sono operazioni che riducono gli elementi dello stream a un singolo valore, ad esempio sum, count, ecc.
+        \item \textbf{Operazioni di raccolta}: sono operazioni che raccolgono gli elementi dello stream in una collezione, ad esempio collect, toList, ecc.
+        \end{itemize}
+    nelle operazioni intermedie possiamo distinguere tra due diversi tipi di operazioni:
+    \begin{itemize}
+        \item \textbf{Stateless}: sono operazioni che non dipendono dagli elementi precedenti, ad esempio map, filter, ecc.
+        \item \textbf{Stateful}: sono operazioni che dipendono dagli elementi precedenti, ad esempio distinct, sorted, ecc.
+        \end{itemize}
+
+
 
 
 

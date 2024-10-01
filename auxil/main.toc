@@ -144,3 +144,7 @@
 \contentsline {subsection}{\numberline {20.8}Builder}{63}{subsection.20.8}%
 \contentsline {subsubsection}{\numberline {20.8.1}Struttura}{63}{subsubsection.20.8.1}%
 \contentsline {subsubsection}{\numberline {20.8.2}esempio}{63}{subsubsection.20.8.2}%
+\contentsline {section}{\numberline {21}Possibili Domande}{65}{section.21}%
+\contentsline {subsection}{\numberline {21.1}Autoboxing e Unboxing}{65}{subsection.21.1}%
+\contentsline {subsection}{\numberline {21.2}Quali sono i 4 principi della programmazzione orientata agli oggetti ?}{65}{subsection.21.2}%
+\contentsline {subsection}{\numberline {21.3}Stream}{66}{subsection.21.3}%

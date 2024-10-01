@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.9.15)  30 SEP 2024 21:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.9.15)  1 OCT 2024 23:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1421,8 +1421,8 @@ Overfull \hbox (33.21716pt too wide) in paragraph at lines 2585--2587
 [][][][][][][][][][][][][][][][] 
  []
 
-[61] [62] [63] [64] [65] [66 <./ObserverUML.png (PNG copy)> <./singletonclass.p
-ng (PNG copy)> <./decoratorUML.png (PNG copy)>]
+[61] [62] [63] [64] [65] [66] [67 <./ObserverUML.png (PNG copy)> <./singletoncl
+ass.png (PNG copy)> <./decoratorUML.png (PNG copy)>]
 (C:/Users\Axel\Desktop\universita\MetodologieDiProgrammazzione\appunti\Metodolo
 gieDiProgrammazzione\auxil\main.aux)
  ***********
@@ -1436,14 +1436,14 @@ Package rerunfilecheck Warning: File `main.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: BAD6BBD0F1D0DB4BE2CE65F4E43CDD04;18234
-(rerunfilecheck)             After:  E6362C84113B415530497CC415213D76;18234.
+(rerunfilecheck)             Before: E6362C84113B415530497CC415213D76;18234
+(rerunfilecheck)             After:  51F692485D92F7DFE851779780D333DE;19072.
  ) 
 Here is how much of TeX's memory you used:
- 35558 strings out of 474486
- 744930 string characters out of 5753573
+ 35574 strings out of 474486
+ 745146 string characters out of 5753573
  1982542 words of memory out of 5000000
- 55499 multiletter control sequences out of 15000+600000
+ 55500 multiletter control sequences out of 15000+600000
  569294 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  127i,8n,123p,1612b,1930s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1461,9 +1461,9 @@ X/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX/fonts/type1/
 public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfo
 nts/cm/cmti10.pfb>
 Output written on C:/Users\Axel\Desktop\universita\MetodologieDiProgrammazzione
-\appunti\MetodologieDiProgrammazzione\out\main.pdf (66 pages, 735407 bytes).
+\appunti\MetodologieDiProgrammazzione\out\main.pdf (67 pages, 741438 bytes).
 PDF statistics:
- 3068 PDF objects out of 3580 (max. 8388607)
- 1901 named destinations out of 2073 (max. 500000)
+ 3091 PDF objects out of 3580 (max. 8388607)
+ 1916 named destinations out of 2073 (max. 500000)
  1009 words of extra memory for PDF output out of 10000 (max. 10000000)
 
