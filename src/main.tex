@@ -2803,6 +2803,136 @@ public class Main {
         \item \textbf{Stateless}: sono operazioni che non dipendono dagli elementi precedenti, ad esempio map, filter, ecc.
         \item \textbf{Stateful}: sono operazioni che dipendono dagli elementi precedenti, ad esempio distinct, sorted, ecc.
         \end{itemize}
+\subsection{Cosa sono le lambda ?}
+
+     In java, una lambda expression `e una funzione anonima che pu`o essere
+     utilizzata per creare un’istanza di un’interfaccia funzionale. Per cui questa espressione crea un
+     oggetto anonimo che fa riferimento ad un interfaccia funzionale compatibile con l’intestazione
+     (Input e Output) della lambda.
+    Le lambda sono composte da tre parti:
+    \begin{itemize}
+        \item \textbf{Lista dei parametri}: é la lista dei parametri della lambda, può essere vuota o contenere uno o più parametri.
+        \item \textbf{Freccia}: é il simbolo -> che separa i parametri dal corpo della lambda.
+        \item \textbf{Corpo della lambda}: é il corpo della lambda, può contenere una o più istruzioni.
+        \end{itemize}
+    \begin{lstlisting}[language=Java]
+        // Lambda senza parametri
+        Runnable runnable = () -> System.out.println("Hello, World!");
+
+        // Lambda con un parametro
+        Consumer<String> consumer = (String s) -> System.out.println(s);
+
+        // Lambda con più parametri
+        BiFunction<Integer, Integer, Integer> sum = (Integer x, Integer y) -> x + y;
+    \end{lstlisting}
+
+
+    Il tipo dei parametri in input ´e opzionale,perch´e ricavato dal contesto in cui la lambda ´e utiliz
+    zata. le parentesi tonde intorno ai parametri sono opzionali se c’´e un solo parametro. le parentesi
+     graffe intorno al corpo della lambda sono opzionali se il corpo contiene una sola espressione.
+     non ´ e necessario utilizzare la parola chiave return.
+
+    \subsection{Identitá in Java ==,equals,hashCode}
+    In Java, sono utilizzati tre metodi per confrontare gli oggetti:
+    \begin{itemize}
+        \item \textbf{==}: é l'operatore di uguaglianza che confronta gli oggetti per riferimento, cioè controlla se due oggetti fanno riferimento allo stesso oggetto.
+        \item \textbf{equals()}: é il metodo che confronta gli oggetti per valore, cioè controlla se due oggetti sono uguali.
+        \item \textbf{hashCode()}: é il metodo che restituisce il codice hash dell'oggetto, cioè un intero che rappresenta l'oggetto.
+        \end{itemize}
+    se scegliamo di utilizzare l'operatore == per confrontare due oggetti, dobbiamo essere sicuri che i due oggetti fanno riferimento allo stesso oggetto,
+    questo operatore puó causare problemi se viene utizzato per confrontare per esempio due stringhe, infatti
+    Se si assegna una stringa usando il letterale stringa, Java potrebbe utilizzare lo String Interning,
+    dove stringhe identiche vengono memorizzate nella stessa posizione di memoria e quindi restituire true anche se fanno riferimento a 2 cose diverse.
+    \newline
+    Se si vuole confrontare due oggetti per valore, si deve utilizzare il metodo equals(), questo metodo é definito nella classe Object e deve essere sovrascritto nelle classi personalizzate.
+    \newline
+    Il metodo hashCode() é utilizzato per restituire il codice hash dell'oggetto, questo metodo é definito nella classe Object e deve essere coerente con il metodo equals(), cioè se due oggetti sono uguali, il loro codice hash deve essere lo stesso.
+\subsection{Gerarchia delle collection}
+    In Java, le strutture dati sono organizzate con una gerarchia di classi e interfacce,
+    la classe principale é la classe Collection che implementa l'interfaccia Iterable, Iterable é un'interfaccia che rappresenta una sequenza di oggetti che possono essere iterati,
+    le classi che estendono la classe Collection sono le seguenti:
+    \begin{itemize}
+        \item \textbf{List}: é un'interfaccia che rappresenta una collezione ordinata di oggetti, le classi che implementano l'interfaccia List sono ArrayList, LinkedList, Vector, ecc.
+        \item \textbf{Set}: é un'interfaccia che rappresenta una collezione di oggetti unici, le classi che implementano l'interfaccia Set sono HashSet, TreeSet, LinkedHashSet, ecc.
+        \item \textbf{Queue}: é un'interfaccia che rappresenta una coda di oggetti, le classi che implementano l'interfaccia Queue sono LinkedList, PriorityQueue, ecc.
+        \item \textbf{Deque}: é un'interfaccia che rappresenta una doppia coda di oggetti, le classi che implementano l'interfaccia Deque sono ArrayDeque, LinkedList, ecc.
+        \end{itemize}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.5\textwidth]{Collection}
+        \caption{Gerarchia delle collection}
+    \end{figure}
+    \subsection{Iterable e Iterator}
+    In Java, l'interfaccia Iterable é un'interfaccia che rappresenta una sequenza di oggetti che possono essere iterati, questa interfaccia contiene un solo metodo che restituisce un oggetto di tipo Iterator,
+    Iterator é un'interfaccia che rappresenta un iteratore su una sequenza di oggetti, questa interfaccia contiene i seguenti metodi:
+    \begin{itemize}
+        \item \textbf{hasNext()}: restituisce true se ci sono altri elementi nella sequenza.
+        \item \textbf{next()}: restituisce il prossimo elemento nella sequenza.
+        \item \textbf{remove()}: rimuove l'ultimo elemento restituito dalla sequenza.
+        \end{itemize}
+    \begin{lstlisting}[language=Java]
+        List<String> list = Arrays.asList("a", "b", "c");
+        Iterator<String> iterator = list.iterator();
+        while (iterator.hasNext()) {
+            String element = iterator.next();
+            System.out.println(element);
+        }
+    \end{lstlisting}
+    l'interfaccia Iterable é utilizzata per creare un oggetto che puó essere iterato, mentre l'interfaccia Iterator é utilizzata per iterare su un oggetto che implementa l'interfaccia Iterable,
+    la classe principale che implementa l'interfaccia Iterable é la classe Collection, se una classe implementa l'interfaccia Iterable, allora puó essere utilizzata in un ciclo for-each, ad esempio:
+    \begin{lstlisting}[language=Java]
+        List<String> list = Arrays.asList("a", "b", "c");
+        for (String element : list) {
+            System.out.println(element);
+        }
+    \end{lstlisting}
+    inoltre la possibilita che una classe implementi Iterable permette di generare degli iteratori che possano scorrere piú collezzioni con un unico metodo, per esempio:
+    \begin{lstlisting}[language=Java]
+        public class MultiIterable<T> implements Iterable<T> {
+            private List<T> list1;
+            private List<T> list2;
+
+            public MultiIterable(List<T> list1, List<T> list2) {
+                this.list1 = list1;
+                this.list2 = list2;
+            }
+
+            @Override
+            public Iterator<T> iterator() {
+                return new MultiIterator();
+            }
+
+            private class MultiIterator implements Iterator<T> {
+                private Iterator<T> iterator1 = list1.iterator();
+                private Iterator<T> iterator2 = list2.iterator();
+
+                @Override
+                public boolean hasNext() {
+                    return iterator1.hasNext() || iterator2.hasNext();
+                }
+
+                @Override
+                public T next() {
+                    if (iterator1.hasNext()) {
+                        return iterator1.next();
+                    } else {
+                        return iterator2.next();
+                    }
+                }
+            }
+        }
+    \end{lstlisting}
+    \subsection{Cosa sono i Tipi Generici e che cosa é il Type Erasure}
+    I tipi generici sono un meccanismo che permette di creare classi, interfacce e metodi che possono lavorare con tipi specifici senza specificarli,
+    questo permette di scrivere codice che é più flessibile e riutilizzabile, inoltre i tipi generici permettono di creare classi che possono lavorare con tipi diversi.
+    Il type erasure é un meccanismo utilizzato dal compilatore Java per rimuovere i tipi generici durante la compilazione, in questo modo il codice generato é compatibile con le versioni precedenti di Java,
+    il type erasure inoltre garantisce oltre che alla retrocompatibilitá, che il polimorfismo sia garantito ad esempio:
+
+
+
+
+
+
 
 
 

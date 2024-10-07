@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.9.15)  1 OCT 2024 23:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.9.15)  2 OCT 2024 21:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -841,11 +841,12 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 (C:/Users\Axel\Desktop\universita\MetodologieDiProgrammazzione\appunti\Metodolo
 gieDiProgrammazzione\auxil\main.toc [1
 
-{C:/ProgramData/MiKTeX/fonts/map/pdftex/pdftex.map}] [2])
+{C:/ProgramData/MiKTeX/fonts/map/pdftex/pdftex.map}] [2] [3])
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
- [3] (C:\Program Files\MiKTeX\tex/latex/listings\lstlang1.sty
+ [4]
+(C:\Program Files\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2023/02/27 1.9 listings language file
 )
 LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 5
@@ -856,7 +857,7 @@ File: omscmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 56.
- [4]
+ [5]
 Overfull \hbox (72.63757pt too wide) in paragraph at lines 86--87
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][] 
@@ -870,13 +871,13 @@ Overfull \hbox (4.36252pt too wide) in paragraph at lines 129--131
  due val-ori e resti-tu-is-cono un val-ore booleano.
  []
 
-[5]
+[6]
 Overfull \hbox (64.33116pt too wide) in paragraph at lines 176--177
 []\OT1/cmr/bx/n/10.95 Conversione es-plicita\OT1/cmr/m/n/10.95 : In-te-ger.pars
 eInt() per con-ver-tire una stringa in un in-tero,Doube.parseDouble()
  []
 
-[6]
+[7]
 
 main.tex:203: LaTeX Error: Invalid UTF-8 byte sequence (√\expandafter).
 
@@ -907,7 +908,7 @@ or specify an encoding such as \usepackage [latin1]{inputenc}
 in the document preamble.
 Alternatively, save the file in UTF-8 using your editor or another tool
 
-[7]
+[8]
 
 main.tex:218: LaTeX Error: Invalid UTF-8 byte sequence (√\expandafter).
 
@@ -938,20 +939,20 @@ or specify an encoding such as \usepackage [latin1]{inputenc}
 in the document preamble.
 Alternatively, save the file in UTF-8 using your editor or another tool
 
-[8]
+[9]
 Overfull \hbox (17.88275pt too wide) in paragraph at lines 291--293
 \OT1/cmr/m/n/10.95 la sin-tassi per dichiarare un metodo ^^Se: [mod-i-fi-ca-tor
 e] [static] [tipoRi-torno] nomeMetodo([parametri])
  []
 
-[9] [10] [11] [12]
+[10] [11] [12] [13]
 Overfull \hbox (1090.99817pt too wide) in paragraph at lines 424--425
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
  
  []
 
-[13] [14] [15] [16] [17]
+[14] [15] [16] [17] [18]
 main.tex:609: Undefined control sequence.
 l.609 \susubssection
                     {Binding Statico}
@@ -966,7 +967,7 @@ Overfull \hbox (138.33826pt too wide) in paragraph at lines 617--618
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[18]
+[19]
 Overfull \hbox (151.4784pt too wide) in paragraph at lines 648--649
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -976,7 +977,7 @@ Overfull \hbox (6.93689pt too wide) in paragraph at lines 674--675
 [][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[19]
+[20]
 Overfull \hbox (6.93689pt too wide) in paragraph at lines 703--705
 [][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -993,18 +994,18 @@ Overfull \hbox (0.48616pt too wide) in paragraph at lines 716--717
 /n/10.95 in-stanceof
  []
 
-[20]
+[21]
 Overfull \hbox (20.07703pt too wide) in paragraph at lines 755--756
 [][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[21] [22] [23] [24]
+[22] [23] [24] [25]
 Overfull \hbox (0.71893pt too wide) in paragraph at lines 898--899
 []\OT1/cmr/bx/n/10.95 Eccezioni non con-trol-late\OT1/cmr/m/n/10.95 : le ec-cez
 ioni non con-trol-late sono ec-cezioni che non richiedono
  []
 
-[25]
+[26]
 Overfull \hbox (20.07703pt too wide) in paragraph at lines 933--934
 [][][][][][][][][][][][][][][][] 
  []
@@ -1014,7 +1015,7 @@ Overfull \hbox (46.3573pt too wide) in paragraph at lines 962--963
 [][][][][][][][][][][][][][][][][][][][] 
  []
 
-[26]
+[27]
 LaTeX Font Info:    Trying to load font information for OML+cmr on input line 1
 007.
  (C:\Program Files\MiKTeX\tex/latex/base\omlcmr.fd
@@ -1023,8 +1024,8 @@ File: omlcmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 1007.
 
- [27] [28] [29] [30]
-[31]
+ [28] [29] [30] [31]
+[32]
 Overfull \hbox (16.47339pt too wide) in paragraph at lines 1226--1229
 \OT1/cmr/m/n/10.95 viene uti-liz-zata per definire un or-di-na-mento per-son-al
 -iz-zato per gli oggetti di una classe. L'interfaccia
@@ -1035,12 +1036,12 @@ Overfull \hbox (20.07703pt too wide) in paragraph at lines 1255--1256
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[32] [33] [34]
+[33] [34] [35]
 Overfull \hbox (171.1886pt too wide) in paragraph at lines 1412--1413
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[35] [36] [37]
+[36] [37] [38]
 
 main.tex:1542: LaTeX Error: There's no line here to end.
 
@@ -1068,7 +1069,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-[38]
+[39]
 
 main.tex:1573: LaTeX Error: There's no line here to end.
 
@@ -1113,7 +1114,7 @@ Overfull \hbox (59.49744pt too wide) in paragraph at lines 1605--1606
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[39] [40] [41]
+[40] [41] [42]
 Overfull \hbox (0.36682pt too wide) in paragraph at lines 1702--1703
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -1123,7 +1124,7 @@ Overfull \hbox (144.90833pt too wide) in paragraph at lines 1705--1706
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[42]
+[43]
 Overfull \hbox (85.77771pt too wide) in paragraph at lines 1734--1735
 [][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -1143,7 +1144,7 @@ Overfull \hbox (0.36682pt too wide) in paragraph at lines 1752--1753
 [][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[43]
+[44]
 Overfull \hbox (0.36682pt too wide) in paragraph at lines 1767--1769
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -1153,7 +1154,7 @@ Overfull \hbox (0.36682pt too wide) in paragraph at lines 1786--1787
 [][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[44]
+[45]
 Overfull \hbox (0.36682pt too wide) in paragraph at lines 1800--1802
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -1178,7 +1179,7 @@ Overfull \hbox (0.36682pt too wide) in paragraph at lines 1841--1842
 [][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[45]
+[46]
 Overfull \hbox (236.88928pt too wide) in paragraph at lines 1864--1865
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][] 
@@ -1195,7 +1196,7 @@ Overfull \hbox (33.21716pt too wide) in paragraph at lines 1889--1890
 [][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[46]
+[47]
 Overfull \hbox (33.21716pt too wide) in paragraph at lines 1890--1892
 [][][][][][][][][][][][][][][][][][][][] 
  []
@@ -1246,7 +1247,7 @@ or specify an encoding such as \usepackage [latin1]{inputenc}
 in the document preamble.
 Alternatively, save the file in UTF-8 using your editor or another tool
 
-[47]
+[48]
 
 main.tex:1929: LaTeX Error: Invalid UTF-8 byte sequence (√\expandafter).
 
@@ -1297,7 +1298,7 @@ Overfull \hbox (164.61853pt too wide) in paragraph at lines 1952--1954
 [][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[48] [49] [50] [51]
+[49] [50] [51] [52]
 Overfull \hbox (46.3573pt too wide) in paragraph at lines 2140--2141
 [][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -1323,12 +1324,12 @@ Overfull \hbox (39.78723pt too wide) in paragraph at lines 2171--2172
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[52]
+[53]
 Overfull \hbox (0.36682pt too wide) in paragraph at lines 2223--2224
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[53]
+[54]
 Overfull \hbox (66.0675pt too wide) in paragraph at lines 2242--2243
 [][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
@@ -1338,13 +1339,13 @@ Overfull \hbox (52.92737pt too wide) in paragraph at lines 2267--2268
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[54]
+[55]
 Overfull \hbox (3.25226pt too wide) in paragraph at lines 2291--2294
 \OT1/cmr/m/n/10.95 di al-go-ritmi e di in-cap-su-larli in maniera tale da ren-d
 erli in-ter-cam-bi-a-bili, la se-lezione dell'algoritmo
  []
 
-<strategyUML.png, id=2211, 408.52625pt x 407.5225pt>
+<strategyUML.png, id=2236, 408.52625pt x 407.5225pt>
 File: strategyUML.png Graphic file (type png)
 <use strategyUML.png>
 Package pdftex.def Info: strategyUML.png  used on input line 2311.
@@ -1352,7 +1353,7 @@ Package pdftex.def Info: strategyUML.png  used on input line 2311.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[55] [56 <./strategyUML.png (PNG copy)>]
+[56] [57 <./strategyUML.png (PNG copy)>]
 
 main.tex:2373: LaTeX Error: Unknown float option `H'.
 
@@ -1364,14 +1365,14 @@ l.2373             \begin{figure}[H]
                                     
 Option `H' ignored and `p' used.
 
-<ObserverUML.png, id=2254, 574.145pt x 390.45876pt>
+<ObserverUML.png, id=2278, 574.145pt x 390.45876pt>
 File: ObserverUML.png Graphic file (type png)
 <use ObserverUML.png>
 Package pdftex.def Info: ObserverUML.png  used on input line 2375.
 (pdftex.def)             Requested size: 226.48395pt x 154.02396pt.
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 2379.
-[57] [58]
+[58] [59]
 
 main.tex:2467: LaTeX Error: Unknown float option `H'.
 
@@ -1383,12 +1384,12 @@ l.2467 \begin{figure}[H]
                         
 Option `H' ignored and `p' used.
 
-<singletonclass.png, id=2338, 265.99374pt x 131.49126pt>
+<singletonclass.png, id=2362, 265.99374pt x 131.49126pt>
 File: singletonclass.png Graphic file (type png)
 <use singletonclass.png>
 Package pdftex.def Info: singletonclass.png  used on input line 2469.
 (pdftex.def)             Requested size: 226.48395pt x 111.96269pt.
-[59]
+[60]
 main.tex:2492: Undefined control sequence.
 l.2492 \subsubection
                     {Quando utilizzare il pattern Decorator}
@@ -1398,7 +1399,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<decoratorUML.png, id=2373, 475.7775pt x 390.45876pt>
+<decoratorUML.png, id=2397, 475.7775pt x 390.45876pt>
 File: decoratorUML.png Graphic file (type png)
 <use decoratorUML.png>
 Package pdftex.def Info: decoratorUML.png  used on input line 2512.
@@ -1411,7 +1412,7 @@ Overfull \hbox (13.50696pt too wide) in paragraph at lines 2531--2532
 [][][][][][][][][][][][][][][][][][][][] 
  []
 
-[60]
+[61]
 Overfull \hbox (59.49744pt too wide) in paragraph at lines 2584--2585
 [][][][][][][][][][][][][][][][][] 
  []
@@ -1421,8 +1422,74 @@ Overfull \hbox (33.21716pt too wide) in paragraph at lines 2585--2587
 [][][][][][][][][][][][][][][][] 
  []
 
-[61] [62] [63] [64] [65] [66] [67 <./ObserverUML.png (PNG copy)> <./singletoncl
-ass.png (PNG copy)> <./decoratorUML.png (PNG copy)>]
+[62] [63] [64] [65] [66]
+Overfull \hbox (6.93689pt too wide) in paragraph at lines 2820--2822
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[67]
+Overfull \hbox (20.07703pt too wide) in paragraph at lines 2823--2825
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+main.tex:2825: LaTeX Error: Invalid UTF-8 byte sequence (√\expandafter).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2825         // Lambda con pi√π 
+                                  parametri
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+main.tex:2825: LaTeX Error: Invalid UTF-8 byte "B9.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2825         // Lambda con pi√π 
+                                  parametri
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+Overfull \hbox (98.91785pt too wide) in paragraph at lines 2826--2827
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+main.tex:2860: LaTeX Error: Unknown float option `H'.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2860     \begin{figure}[H]
+                            
+Option `H' ignored and `p' used.
+
+<Collection.png, id=2655, 686.565pt x 580.1675pt>
+File: Collection.png Graphic file (type png)
+<use Collection.png>
+Package pdftex.def Info: Collection.png  used on input line 2862.
+(pdftex.def)             Requested size: 226.48395pt x 191.38504pt.
+[68]
+Overfull \hbox (6.93689pt too wide) in paragraph at lines 2911--2912
+[][][][][][][][][][][][][][][][][] 
+ []
+
+[69] [70] [71 <./ObserverUML.png (PNG copy)> <./singletonclass.png (PNG copy)> 
+<./decoratorUML.png (PNG copy)>] [72 <./Collection.png>]
 (C:/Users\Axel\Desktop\universita\MetodologieDiProgrammazzione\appunti\Metodolo
 gieDiProgrammazzione\auxil\main.aux)
  ***********
@@ -1431,19 +1498,22 @@ L3 programming layer <2024-01-04>
  ***********
 
 
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
 Package rerunfilecheck Warning: File `main.out' has changed.
 (rerunfilecheck)                Rerun to get outlines right
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: E6362C84113B415530497CC415213D76;18234
-(rerunfilecheck)             After:  51F692485D92F7DFE851779780D333DE;19072.
+(rerunfilecheck)             Before: 51F692485D92F7DFE851779780D333DE;19072
+(rerunfilecheck)             After:  54AE2A09EC2E995B047A7C5610FCAF06;20224.
  ) 
 Here is how much of TeX's memory you used:
- 35574 strings out of 474486
- 745146 string characters out of 5753573
+ 35667 strings out of 474486
+ 746597 string characters out of 5753573
  1982542 words of memory out of 5000000
- 55500 multiletter control sequences out of 15000+600000
+ 55527 multiletter control sequences out of 15000+600000
  569294 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  127i,8n,123p,1612b,1930s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1461,9 +1531,9 @@ X/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX/fonts/type1/
 public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfo
 nts/cm/cmti10.pfb>
 Output written on C:/Users\Axel\Desktop\universita\MetodologieDiProgrammazzione
-\appunti\MetodologieDiProgrammazzione\out\main.pdf (67 pages, 741438 bytes).
+\appunti\MetodologieDiProgrammazzione\out\main.pdf (72 pages, 782083 bytes).
 PDF statistics:
- 3091 PDF objects out of 3580 (max. 8388607)
- 1916 named destinations out of 2073 (max. 500000)
- 1009 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3205 PDF objects out of 3580 (max. 8388607)
+ 1982 named destinations out of 2073 (max. 500000)
+ 1046 words of extra memory for PDF output out of 10000 (max. 10000000)
 
