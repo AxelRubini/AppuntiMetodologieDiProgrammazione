@@ -2926,7 +2926,84 @@ public class Main {
     I tipi generici sono un meccanismo che permette di creare classi, interfacce e metodi che possono lavorare con tipi specifici senza specificarli,
     questo permette di scrivere codice che é più flessibile e riutilizzabile, inoltre i tipi generici permettono di creare classi che possono lavorare con tipi diversi.
     Il type erasure é un meccanismo utilizzato dal compilatore Java per rimuovere i tipi generici durante la compilazione, in questo modo il codice generato é compatibile con le versioni precedenti di Java,
-    il type erasure inoltre garantisce oltre che alla retrocompatibilitá, che il polimorfismo sia garantito ad esempio:
+    il type erasure inoltre garantisce oltre che alla retrocompatibilitá, che il polimorfismo sia garantito,inoltre é importante anche ricordare che PECS (Producer Extends Consumer Super) é un principio che si applica ai tipi generici,
+    questo principio dice che se un parametro di un metodo é un produttore di oggetti, allora dovrebbe essere utilizzato extends, se un parametro di un metodo é un consumatore di oggetti, allora dovrebbe essere utilizzato super
+    \subsubsection{Casting Implicito}
+    Il casting implicito in Java è il processo automatico di conversione di un tipo di dato in un altro tipo di dato senza che sia necessario un intervento esplicito da parte del programmatore. Questo avviene principalmente quando si convertono tipi di dati più piccoli in tipi di dati più grandi, come da int a long o da float a double.
+    \begin{lstlisting}[language=Java]
+public class Main {
+    public static void main(String[] args) {
+        int numeroIntero = 42;
+        double numeroDouble = numeroIntero; // Casting implicito da int a double
+
+        System.out.println("Numero intero: " + numeroIntero);
+        System.out.println("Numero double: " + numeroDouble);
+    }
+}
+    \end{lstlisting}
+    inoltre é possibile fare il casting impllicito tra oggetti,In Java, il casting implicito tra oggetti avviene quando si effettua l'upcasting, ovvero quando si converte un oggetto di una sottoclasse a un oggetto di una superclasse. Questo avviene automaticamente e non richiede un cast esplicito.
+    \begin{lstlisting}[language=Java]
+class Animale {
+    public void faiVerso() {
+        System.out.println("L'animale fa un verso");
+    }
+}
+
+class Cane extends Animale {
+    @Override
+    public void faiVerso() {
+        System.out.println("Il cane abbaia");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Animale animale = new Cane(); // Upcasting implicito
+        animale.faiVerso(); // Chiamerà il metodo sovrascritto nella classe Cane
+    }
+}
+    \end{lstlisting}
+    \subsubsection{Casting Esplicito}
+    Il casting esplicito in Java è il processo di conversione di un tipo di dato in un altro tipo di dato in cui il programmatore deve intervenire esplicitamente. Questo avviene principalmente quando si convertono tipi di dati più grandi in tipi di dati più piccoli, come da double a int o da long a int.
+    \begin{lstlisting}[language=Java]
+public class Main {
+    public static void main(String[] args) {
+        double numeroDouble = 42.0;
+        int numeroIntero = (int) numeroDouble; // Casting esplicito da double a int
+
+        System.out.println("Numero double: " + numeroDouble);
+        System.out.println("Numero intero: " + numeroIntero);
+    }
+}
+    \end{lstlisting}
+    inoltre é possibile fare il casting esplicito tra oggetti,In Java, il casting esplicito tra oggetti avviene quando si effettua il downcasting, ovvero quando si converte un oggetto di una superclasse a un oggetto di una sottoclasse. Questo richiede un cast esplicito e può causare un'eccezione ClassCastException se l'oggetto non è effettivamente un'istanza della sottoclasse.
+    \begin{lstlisting}[language=Java]
+class Animale {
+    public void faiVerso() {
+        System.out.println("L'animale fa un verso");
+    }
+}
+
+class Cane extends Animale {
+    @Override
+    public void faiVerso() {
+        System.out.println("Il cane abbaia");
+    }
+
+    public void scodinzola() {
+        System.out.println("Il cane scodinzola");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Animale animale = new Cane(); // Upcasting implicito
+        Cane cane = (Cane) animale; // Downcasting esplicito
+        cane.faiVerso(); // Chiamerà il metodo sovrascritto nella classe Cane
+        cane.scodinzola(); // Chiamerà il metodo definito nella classe Cane
+    }
+}
+    \end{lstlisting}
 
 
 

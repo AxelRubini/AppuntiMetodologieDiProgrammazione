@@ -153,3 +153,5 @@
 \contentsline {subsection}{\numberline {21.6}Gerarchia delle collection}{68}{subsection.21.6}%
 \contentsline {subsection}{\numberline {21.7}Iterable e Iterator}{69}{subsection.21.7}%
 \contentsline {subsection}{\numberline {21.8}Cosa sono i Tipi Generici e che cosa é il Type Erasure}{70}{subsection.21.8}%
+\contentsline {subsubsection}{\numberline {21.8.1}Casting Implicito}{70}{subsubsection.21.8.1}%
+\contentsline {subsubsection}{\numberline {21.8.2}Casting Esplicito}{71}{subsubsection.21.8.2}%
